@@ -1,0 +1,30 @@
+{
+  "name": "02-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development gulp -f gulp.config.js",
+    "prod": "cross-env NODE_ENV=production gulp -f gulp.config.js",
+    "runjs": "node ./02-scripts/script1.js & node ./02-scripts/script2.js",
+    "start": "node ./02-scripts/script.js",
+    "test": "node ./02-scripts/test.js",
+    "build": "echo $npm_package_config_env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.2",
+    "jquery": "^3.6.1",
+    "underscore": "^1.13.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2"
+  },
+  "config": {
+    "env": "production",
+    "desp": "hello"
+  }
+}
