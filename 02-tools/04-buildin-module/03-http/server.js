@@ -6,14 +6,15 @@ const server = http.createServer((request, response) => {
 
     let data = ''
     request.on('data', chunk => {
+        console.log(`chunk: ${chunk}`)
         data += chunk
     })
     request.on('end', () => {
         response.writeHead(200, {
             'Content-Type': 'application/json;charset=utf-8'
         })
-        response.write(`{"url": "${url}"}`)
-        console.log(data)
+        response.write(`{"url": "${url}"}\n`)
+        console.log(`data: ${data}`)
         response.write(JSON.stringify(querystring.parse(data)))
         response.end()
     })
