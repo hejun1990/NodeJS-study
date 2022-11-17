@@ -1,0 +1,14 @@
+#content {
+    overflow-y: scroll;
+    width: 400px;
+    height: 300px;
+    border: solid 1px #000;
+}
+
+#msg {
+    width: 200px;
+}
+
+#submit {
+    margin-top: 5px;
+}

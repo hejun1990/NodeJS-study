@@ -1,0 +1,10 @@
+{
+  "name": "04-mongodb",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "hejun",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^4.11.0"
+  }
+}

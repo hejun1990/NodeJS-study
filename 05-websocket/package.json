@@ -1,0 +1,12 @@
+{
+  "name": "mywebsocket",
+  "version": "1.0.0",
+  "description": "websocket",
+  "main": "socket-server.js",
+  "author": "hejun",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.11.0"
+  }
+}
